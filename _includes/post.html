@@ -1,0 +1,36 @@
+<article class="post hentry">
+   <div class="post-image">
+	  <a href="{{ include.post.image }}" data-rel="prettyPhoto">
+	  <span class="img-hover"></span>
+	  <span class="fullscreen"><i class="icon-search"></i></span>
+	  <img src="{{ include.post.image }}" alt="">
+	  </a>
+   </div>
+   <div class="post-content-wrap">
+	  <header class="post-header">
+		 <div class="post-date">
+			<a href="{{ include.post.url }}" class="date"><strong>{{ include.post.date | date: "%-d" }}</strong><i>{{ include.post.date | date: "%B" }}</i></a>
+		 </div>
+		 <h3 class="content-title"><a href="{{ include.post.url }}">{{ include.post.title }}</a></h3>
+		 <div class="blog-entry-meta">
+			<div class="blog-entry-meta-author">
+			   <i class="icon-user"></i>
+			   <span class="blog-entry-meta-author">{{ include.post.author }}</span>
+			</div>
+			<div class="blog-entry-meta-tags">
+			   <i class="icon-tags"></i>
+				{% for tag in include.post.tags %}
+					<a href="/tag/{{ tag }}.html">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+				{% endfor %}
+			</div>
+		 </div>
+	  </header>
+	  <div class="post-content">
+		 <p>
+			{{ include.post.excerpt }}
+		 </p>
+	  </div>
+   </div>
+   <div class="clearfix"></div>
+</article>
+<div class="blog-divider"></div>

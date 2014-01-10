@@ -1,0 +1,9 @@
+---
+paginate_path: "blog/:num"
+title: Blog RunOrg 
+layout: bloglist
+---
+
+{% for post in site.posts %}
+	{% include post.html post=post %}
+{% endfor %}
