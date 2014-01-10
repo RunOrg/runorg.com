@@ -19,23 +19,23 @@
 }
 
 .ie8 .btn-color:hover, .ie9 .btn-color:hover {
-	background: #fb61bd !important;
+	background: #e70079 !important;
 }
 
 .btn-color:hover, .subscribe-btn:hover {
-	background: -webkit-linear-gradient(#fb61bd,#ec008c);
-	background: -moz-linear-gradient(#fb61bd,#ec008c);
-	background: -o-linear-gradient(#fb61bd,#ec008c);
-	background: -ms-linear-gradient(#fb61bd,#ec008c);
-	background: linear-gradient(#fb61bd,#ec008c);
+	background: -webkit-linear-gradient(#e70079,#ec008c);
+	background: -moz-linear-gradient(#e70079,#ec008c);
+	background: -o-linear-gradient(#e70079,#ec008c);
+	background: -ms-linear-gradient(#e70079,#ec008c);
+	background: linear-gradient(#e70079,#ec008c);
 }
 
 .btn-color, .subscribe-btn {
-	background: -webkit-linear-gradient(#ec008c,#fb61bd);
-	background: -moz-linear-gradient(#ec008c,#fb61bd);
-	background: -o-linear-gradient(#ec008c,#fb61bd);
-	background: -ms-linear-gradient(#ec008c,#fb61bd);
-	background: linear-gradient(#ec008c,#fb61bd);
+	background: -webkit-linear-gradient(#ec008c,#e70079);
+	background: -moz-linear-gradient(#ec008c,#e70079);
+	background: -o-linear-gradient(#ec008c,#e70079);
+	background: -ms-linear-gradient(#ec008c,#e70079);
+	background: linear-gradient(#ec008c,#e70079);
 	border: 1px solid #a05280;
 
 	-webkit-box-shadow: inset 0 1px 1px 0 #e4a6cb, 0 2px 0 -1px rgba(0,0,0,0.2);
