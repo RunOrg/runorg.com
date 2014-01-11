@@ -625,12 +625,12 @@ jQuery(document).ready(function () {
 		
 	//Google map
 	jQuery('#maps').gMap({
-		address: "Khulna Division, Bangladesh",
+		address: "22 rue planchat 75020 Paris",
 		zoom: 10,
 		markers: [{
-			latitude: 22.816694,
-			longitude: 89.549904,
-			html: "<h4>FIFO Themes</h4>Wordpress, HTML5/CSS Themes",
+			latitude: 48.853195,
+			longitude: 2.398666,
+			html: "<h4>RUNORG</h4>Communautés en ligne",
 			popup: true
 		}]
 	});
