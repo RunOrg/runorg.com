@@ -190,7 +190,7 @@ jQuery(window).load(function() {
       if (jQuery.fn.cssOriginal!=undefined)
       jQuery.fn.css = jQuery.fn.cssOriginal;
       jQuery('.fullwidthbanner').revolution({
-        delay: 12000,
+        delay: 14000,
         startwidth: 1170,
         startheight: 470,
 
