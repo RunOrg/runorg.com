@@ -182,7 +182,7 @@ jQuery(window).load(function() {
 
 
 /*----------------------------------------------------*/
-/*	Revolution Slider Triggering
+/*	Revolution Slider Triggering RUNORG
 /*----------------------------------------------------*/
 
 
