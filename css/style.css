@@ -971,6 +971,13 @@ div.content-box div.content-box-info {
     padding-left: 115px;
 }
 
+/*RUNORG*/
+div.video-box {
+	position:relative;
+	margin:0 auto;
+	
+}
+
 div.content-box.big {
 	padding:0 7% 30px;
 	border-radius: 3px;
