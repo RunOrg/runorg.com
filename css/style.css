@@ -974,8 +974,8 @@ div.content-box div.content-box-info {
 /*RUNORG*/
 div.video-box {
 	position:relative;
-	margin:0 auto;
-	
+	margin:45px auto;
+	width: 560px;
 }
 
 div.content-box.big {
