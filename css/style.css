@@ -978,6 +978,21 @@ div.video-box {
 	width: 560px;
 }
 
+/*RUNORG*/
+div.image-box {
+	position:relative;
+	margin:45px auto;
+	width: 560px;
+	background: url("../img/bg_off.png") repeat;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	border: 1px solid #ddd;
+	padding: 4px;
+	overflow: hidden;
+	display: block;
+}
+
 div.content-box.big {
 	padding:0 7% 30px;
 	border-radius: 3px;
