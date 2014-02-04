@@ -4,6 +4,7 @@
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
    <head>
       <meta charset="utf-8">
+	  <meta property="fb:admins" content="{mfoughali}"/>
       <title>{{ page.title }}</title>
 	  {% include head.html %}
    </head>
@@ -17,15 +18,15 @@
                <div class="container">
                   <div class="row">
                      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
-                        <h2 class="title">Blog Single Post</h2>
+                        <h2 class="title">{{ page.title }}</h2>
                      </div>
                      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
                         <div class="breadcrumbs pull-right">
                            <ul>
-                              <li>You are here:</li>
-                              <li><a href="index.html">Home</a></li>
-                              <li><a href="#">Blog</a></li>
-                              <li>Blog Single Post</li>
+                              <li>Vous êtes ici :</li>
+                              <li><a href="/index.html">Accueil</a></li>
+                              <li><a href="/blog/index.html">Blog RUNORG</a></li>
+                              <li>{{ page.title }}</li>
                            </ul>
                         </div>
                      </div>
@@ -64,20 +65,51 @@
 								<div class="post-content">
 		 {{ content }}
 								</div>
+								<!-- AddThis Button BEGIN -->
+								<h4>Partagez</h4>
+								<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+								<a class="addthis_button_preferred_1"></a>
+								<a class="addthis_button_preferred_2"></a>
+								<a class="addthis_button_preferred_3"></a>
+								<a class="addthis_button_linkedin"></a>
+								<a class="addthis_button_compact"></a>
+								<a class="addthis_counter addthis_bubble_style"></a>
+								</div>
+								<!-- AddThis Button END -->
+								<h4>Commentez</h4>
+								<div class="fb-comments" data-href="http://runorg.com/{{ page.url }}" data-numposts="5" data-colorscheme="light"></div>
                         </article>
                         <div class="blog-divider"></div>
 						</div>
                      <div class="sidebar col-lg-3 col-md-3 col-sm-4 col-xs-12">
-                        <!-- Search Widget Start -->
-                        <div class="widget search-form">
-                           <div class="input-group">
-                              <input type="text" value="Search..." onfocus="if(this.value=='Search...')this.value='';" onblur="if(this.value=='')this.value='Search...';" class="search-input form-control">
-                              <span class="input-group-btn">
-                              <button type="submit" class="subscribe-btn btn"><i class="icon-search"></i></button>
-                              </span>
-                           </div>
-                           <!-- /input-group -->
+						<!-- Left Section start -->
+                        <div class="widget">
+                           <h3 class="title">Résumé</h3>
+                           <p>
+                             {{ page.resume }}
+                           </p>
                         </div>
+                        <!-- Project Description End -->  
+                        <div class="widget">
+                           <div class="favourite">
+                              <a class="btn-special btn-grey" href="/contact.html"><strong><i class="icon-envelope"></i> Contactez-nous !</strong></a>
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                        <div class="widget">
+                           <div class="member-social dark">
+                              <a class="facebook" href="https://www.facebook.com/RunOrg"><i class="icon-facebook"></i></a>
+                              <a class="twitter" href="https://twitter.com/runorg"><i class="icon-twitter"></i></a>
+                              <!-- <a class="dribbble" href="#"><i class="icon-dribbble"></i></a> -->
+                              <a class="gplus" href="https://plus.google.com/105717032059999732993/about"><i class="icon-google-plus"></i></a>
+                              <a class="linkedin" href="http://www.linkedin.com/company/runorg"><i class="icon-linkedin"></i></a>
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                        <!-- Search Widget Start -->
+						<div class="widget">
+                        <gcse:search></gcse:search>
+						</div>
                         <!-- Search Widget End -->
                         <!-- Tab Start -->
                         <div class="widget tabs">
@@ -134,72 +166,6 @@
                            </div>
                         </div>
                         <!-- Tab End -->
-                        <!-- Testimonials Widget Start -->
-                        <div class="row">
-                           <div class="testimonials widget">
-                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                 <div class="testimonials-title">
-                                    <h3 class="title">Testimonials</h3>
-                                 </div>
-                              </div>
-                              <div class="clearfix"></div>
-                              <div id="testimonials-carousel" class="testimonials-carousel slide">
-                                 <div class="carousel-inner">
-                                    <div class="item active">
-                                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                          <div class="testimonial item">
-                                             <p>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
-                                             </p>
-                                             <div class="testimonials-arrow">
-                                             </div>
-                                             <div class="author">
-                                                <div class="testimonial-image "><img alt="" src="img/team/team-member.jpg"></div>
-                                                <div class="testimonial-author-info">
-                                                   <a href="#"><span class="color">Monica Sing</span></a> FIFO Themes
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="item">
-                                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                          <div class="testimonial item">
-                                             <p>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
-                                             </p>
-                                             <div class="testimonials-arrow">
-                                             </div>
-                                             <div class="author">
-                                                <div class="testimonial-image "><img alt="" src="img/team/team-member.jpg"></div>
-                                                <div class="testimonial-author-info">
-                                                   <a href="#"><span class="color">Monzurul Haque</span></a> FIFO Themes
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="item">
-                                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                          <div class="testimonial item">
-                                             <p>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
-                                             </p>
-                                             <div class="testimonials-arrow">
-                                             </div>
-                                             <div class="author">
-                                                <div class="testimonial-image "><img alt="" src="img/team/team-member.jpg"></div>
-                                                <div class="testimonial-author-info">
-                                                   <a href="#"><span class="color">Carol Johansen</span></a> FIFO Themes
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
                         <!-- Category Widget Start -->
                         <div class="widget category">
                            <h3 class="title">Categories</h3>
@@ -212,7 +178,6 @@
                            </ul>
                         </div>
                         <!-- Category Widget End -->
-                     </div>
                      <!-- Sidebar End --> 
                   </div>
                </div>
