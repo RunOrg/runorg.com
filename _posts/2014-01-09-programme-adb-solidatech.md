@@ -3,19 +3,16 @@ title: RUNORG devient donateur AdB SolidaTech
 layout: blog
 author: RUNORG
 image: /img/blog/post-adbsolidatech.jpg
-tags: ["annonce" , "entreprise"]
-resume: Nous aidons les associations ! RUNORG devient donateur du programme AdB Solidatech au coté de grands comptes de l'industrie informatique.
+tags: ["Nouveaute" , "Notre-Entreprise", "Associations"]
+resume: RUNORG devient donateur du programme AdB Solidatech au coté de grands comptes de l'industrie informatique.
 --- 
-Depuis le début de cette année 2014 RUNORG est devenu membre de [CAP Digital](http://www.capdigital.com/) .
+Nous avons le plaisir de devenir partenaire donateurs du programme [TechSoup](http://www.techsoup.org/), qui est représenté en France par les [Ateliers du Bocages SolidaTech](https://www.adb-solidatech.fr/) (une association liée à EMMAÜS). 
 
-Nous sommes très heureux de rejoindre le pôle de compétitivité des services et contenus numériques ! 
+C'est un programme que nous recommandons à toutes les associations puisqu'il leur permet d'obtenir des licences pour des logiciels Microsoft, Adobe ou en Ciel pour un prix très intéressant. Et désormais donc : les associations membres du programme auront accès à RUNORG pour (encore) moins cher ! Nous aimons les associations et nous tachons de les aider de notre mieux en leur mettant à disposition notre technologie.
 
-Nous pensons que les différents acteurs de la filière numérique française ont tout intérêt à coopérer pour innover dans un marché dont le dynamisme ne se dément pas. C'est en joignant nos efforts que nous arriveront à influer sur les usages.
+L'équipe d'AdB SolidaTech que nous avons rencontré à plusieurs reprises est tout à fait remarquable en gentillesse, compétence et efficacité !
 
-Développant une solution open source, nous sommes naturellement ouverts à toute forme de coopération avec les autre entreprises du secteurs, qu'elles soient dans la communication, le développement ou la recherche, qu'elles travaillent en propriétaire ou en open source, qu'elles soient spécialisées sur un secteur d'activité ou généralistes. Bref, comme notre code source, nous sommes ouverts aux contributions de chacun pour l'enrichissement de tout !
+Nous profitons de l'occasion pour vous signaler l'excellent témoignage d'une association cliente de notre application : [https://www.adb-solidatech.fr/temoignage-runorg](https://www.adb-solidatech.fr/temoignage-runorg)
 
-L'équipe RUNORG.
+Pour plus d'info sur notre partenariat, c'est ici : [https://www.adb-solidatech.fr/donors_fr/runorg-fr](https://www.adb-solidatech.fr/donors_fr/runorg-fr)
 
-https://www.adb-solidatech.fr/donors_fr/runorg-fr
-https://www.adb-solidatech.fr/
-https://www.adb-solidatech.fr/temoignage-runorg

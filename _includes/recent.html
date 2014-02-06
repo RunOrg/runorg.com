@@ -2,7 +2,7 @@
    <div id="horizontal-tabs">
 	  <ul class="tabs">
 		 <li id="tab1" class="current">Récent</li>
-		 <!--<li id="tab2">Recent</li>-->
+		 <li id="tab2">Catégories</li>
 		 <!--<li id="tab3">Comments</li>-->
 	  </ul>
 	  <div class="contents">
@@ -20,23 +20,13 @@
 				   </li>
 				 {% endfor %}
 			</ul>
-
 		 </div>
-		 <!--
 		 <div class="tabscontent" id="content2">
 			<ul class="posts">
-			   <li>
-				  <a href="#"><img class="img-thumbnail recent-post-img" alt="" src="img/recent-post-img.jpg"></a>
-				  <p><a href="#">Lorem Ipsum is simply dummy text.</a></p>
-				  <span class="color">27 July 2013</span>
-			   </li>
-			   <li>
-				  <a href="#"><img class="img-thumbnail recent-post-img" alt="" src="img/recent-post-img.jpg"></a>
-				  <p><a href="#">Lorem Ipsum is simply dummy text.</a></p>
-				  <span class="color">30 July 2013</span>
-			   </li>
+			   	{% include categories.html %}
 			</ul>
 		 </div>
+		 <!--
 		 <div class="tabscontent" id="content3">
 			<ul class="posts">
 			   <li>
