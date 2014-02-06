@@ -385,45 +385,25 @@ layout: default
 		 <div class="clearfix"></div>
 		 <div class="blog-showcase col-lg-12 col-md-12 col-sm-12 col-xs-12 animate_afb d1">
 			<ul>
-			   <li class="">
+			{% for post in site.posts limit:3 %}
+			   <li {% if forloop.first %}class="blog-first-el" {%endif %}>
 				  <div class="blog-showcase-thumb col-lg-4">
 					 <div class="post-body">
-						<a class="post-item-link" href="img/portfolio/img-portfolio.jpg" data-rel="prettyPhoto"><span class="post-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img alt="" src="img/portfolio/img-portfolio.jpg"></a>
+						<a class="post-item-link" href="{{ post.image }}" data-rel="prettyPhoto"><span class="post-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img alt="" src="{{ post.image }}"></a>
 					 </div>
 				  </div>
 				  <div class="blog-showcase-extra-info col-lg-4">
-					 <span><a href="#">Sep 11th, 2013</a></span>
-					 <h4><a href="#" class="title">Blog post title</a></h4>
-					 <p>Mauris sed mauris bibendum est imperdiet porttitor tincidunt at lorem. Proin augue massa</p>
-					 <a href="#">Read more <i class="icon-double-angle-right"></i></a>
+					 <span><a href="{{ post.url }}">
+						{{ post.date | date: "%B" }}
+						{{ post.date | date: "%-d" }},
+						{{ post.date | date: "%Y" }}
+					 </a></span>
+					 <h4><a href="{{ post.url }}" class="title">{{post.title}}</a></h4>
+					 <p>{{post.resume}}</p>
+					 <a href="{{ post.url }}">Read more <i class="icon-double-angle-right"></i></a>
 				  </div>
 			   </li>
-			   <li>
-				  <div class="blog-showcase-thumb col-lg-4">
-					 <div class="post-body">
-						<a class="post-item-link" href="img/portfolio/img-portfolio.jpg" data-rel="prettyPhoto"><span class="post-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img alt="" src="img/portfolio/img-portfolio.jpg"></a>
-					 </div>
-				  </div>
-				  <div class="blog-showcase-extra-info col-lg-4">
-					 <span><a href="#">Sep 11th, 2013</a></span>
-					 <h4><a href="#" class="title">Blog post title</a></h4>
-					 <p>Mauris sed mauris bibendum est imperdiet porttitor tincidunt at lorem. Proin augue massa</p>
-					 <a href="#">Read more <i class="icon-double-angle-right"></i></a>
-				  </div>
-			   </li>
-			   <li class="blog-first-el">
-				  <div class="blog-showcase-thumb col-lg-4">
-					 <div class="post-body">
-						<a class="post-item-link" href="img/portfolio/img-portfolio.jpg" data-rel="prettyPhoto"><span class="post-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img alt="" src="img/portfolio/img-portfolio.jpg"></a>
-					 </div>
-				  </div>
-				  <div class="blog-showcase-extra-info col-lg-4">
-					 <span><a href="#">Sep 11th, 2013</a></span>
-					 <h4><a href="#" class="title">Blog post title</a></h4>
-					 <p>Mauris sed mauris bibendum est imperdiet porttitor tincidunt at lorem. Proin augue massa</p>
-					 <a href="#">Read more <i class="icon-double-angle-right"></i></a>
-				  </div>
-			   </li>
+			{% endfor %}
 			</ul>
 			<div class="clearfix"></div>
 		 </div>
@@ -433,135 +413,5 @@ layout: default
 </div>
 <!-- Latest Posts End -->
 <!-- Our Clients Start-->
-<div class="our-clients">
-   <div class="container">
-	  <div class="row">
-		 <div class="client">
-			<div class="client-logo">
-			   <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-				  <div class="clients-title">
-					 <h3 class="title">Clients et Partenaires</h3>
-					 <div class="carousel-controls pull-right">
-						<a class="prev" href="#client-carousel" data-slide="prev"><i class="icon-angle-left"></i></a>
-						<a class="next" href="#client-carousel" data-slide="next"><i class="icon-angle-right"></i></a>
-						<div class="clearfix"></div>
-					 </div>
-				  </div>
-				  <div class="clearfix"></div>
-				  <div class="row">
-					 <div id="client-carousel" class="client-carousel slide">
-						<div class="carousel-inner">
-						   <div class="item active">
-							  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d1">
-								 <div class="item-inner"><a href="http://www.charnilagence.com/"><img alt="Upportdash" src="/img/clientslogo/ref-charnilagence.jpg"></a></div>
-							  </div>
-							  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d2">
-								 <div class="item-inner"><a href="http://www.ffbad.org/"><img alt="Upportdash" src="/img/clientslogo/ref-logo-badminton.jpg"></a></div>
-							  </div>
-							  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d3">
-								 <div class="item-inner"><a href="http://www.ville-clichy.fr/"><img alt="Upportdash" src="/img/clientslogo/ref-logo-clichy.jpg"></a></div>
-							  </div>
-							  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d4">
-								 <div class="item-inner"><a href="http://www.territories-of-tomorrow.org/"><img alt="Upportdash" src="/img/clientslogo/ref-territoires-demain.jpg"></a></div>
-							  </div>
-						   </div>
-						   <div class="item">
-							  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item">
-								 <div class="item-inner"><a href="http://webintelligence.fr/"><img alt="Upportdash" src="/img/clientslogo/ref-mac2.jpg"></a></div>
-							  </div>
-							  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item">
-								 <div class="item-inner"><a href="http://alfortville.fr/"><img alt="Upportdash" src="/img/clientslogo/ref-alfortville.jpg"></a></div>
-							  </div>
-							  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item">
-								 <div class="item-inner"><a href="http://www.fscf.asso.fr/"><img alt="Upportdash" src="/img/clientslogo/ref-fscf.jpg"></a></div>
-							  </div>
-							  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item">
-								 <div class="item-inner"><a href="http://www.iepp.fr/"><img alt="Upportdash" src="/img/clientslogo/ref-iepp.jpg"></a></div>
-							  </div>
-						   </div>
-						 </div>
-					 </div>
-							 <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12"> 
-								  <h3 class="title">RUNORG est membre de :</h3>
-								   <div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 item">
-								  <div class="item-inner"><a href="http://www.capdigital.com/"><img alt="Upportdash" src="/img/clientslogo/logo-cap-digital.jpg"></a></div>
-								 </div>
-								  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 item">
-								  <div class="item-inner"><a href="http://careep.fr/"><img alt="Upportdash" src="/img/clientslogo/logo-careep.jpg"></a></div>
-								</div>
-							</div>
-					</div>
-			   </div>
-			   <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				  <!-- Testimonials Widget Start -->
-				  <div class="row ">
-					 <div class="testimonials widget">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						   <div class="testimonials-title">
-							  <h3 class="title">Témoignages</h3>
-						   </div>
-						</div>
-						<div class="clearfix"></div>
-						<div id="testimonials-carousel" class="testimonials-carousel slide animate_afr d5">
-						   <div class="carousel-inner">
-							  <div class="item active">
-								 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="testimonial item">
-									   <p>
-										  Une équipe créative dans ses propositions et un outil original : cela nous permet de proposer à nos clients des solutions de communication interne ou d'animation de réseaux, innovantes.
-									   </p>
-									   <div class="testimonials-arrow">
-									   </div>
-									   <div class="author">
-										  <div class="testimonial-image "><img alt="" src="img/team/temoi-p-charni.jpg"></div>
-										  <div class="testimonial-author-info">
-											 <a href="#"><span class="color">Patrick Charni</span></a> Charni l'agence
-										  </div>
-									   </div>
-									</div>
-								 </div>
-							  </div>
-							  <div class="item">
-								 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="testimonial item">
-										<p>
-										  RUNORG Open Source nous apporte toutes les briques sociales que nos clients voulaient voir intégrer à leurs sites Internet et Intranet, et dans leurs budgets ! Nous disposons d'un véritable accompagnement ce qui renforce notre crédibilité auprès du client.
-									   </p>
-									   <div class="testimonials-arrow">
-									   </div>
-									   <div class="author">
-										  <div class="testimonial-image "><img alt="" src="img/team/temoi-md-cellucci.jpg"></div>
-										  <div class="testimonial-author-info">
-											 <a href="http://www.webintelligence.fr/"><span class="color">Marc-Denis Cellucci</span></a> Agence MAC2
-									   	  </div>
-									   </div>
-									</div>
-								 </div>
-							  </div>
-							  <div class="item">
-								 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="testimonial item">
-									   <p>
-										  Notre organisation est reproduite en miroir au sein de l’outil avec des espaces dédiés (...) RunOrg permet aux moins disponibles de suivre ce qui se passe dans leur GT grâce aux notifications e-mail.
-									   </p>
-									   <div class="testimonials-arrow">
-									   </div>
-									   <div class="author">
-										  <div class="testimonial-image "><img alt="" src="img/team/temoi-d-vailleau.jpg"></div>
-										  <div class="testimonial-author-info">
-											 <a href="https://www.adb-solidatech.fr/temoignage-runorg"><span class="color">Daniel Vailleau</span></a> DAD
-										  </div>
-									   </div>
-									</div>
-							  </div>
-						   </div>
-						</div>
-					 </div>
-				  </div>
-			   </div>
-			</div>
-		 </div>
-	  </div>
-   </div>
-</div>
+{% include ourclients.html %}
 <!-- Our Clients End -->  

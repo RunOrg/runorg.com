@@ -1,0 +1,57 @@
+<div class="widget tabs">
+   <div id="horizontal-tabs">
+	  <ul class="tabs">
+		 <li id="tab1" class="current">Récent</li>
+		 <!--<li id="tab2">Recent</li>-->
+		 <!--<li id="tab3">Comments</li>-->
+	  </ul>
+	  <div class="contents">
+		 <div class="tabscontent" id="content1" style="display: block;">
+			<ul class="posts">	
+				 {% for post in site.posts limit: 2 %}
+				   <li>
+					  <a href="{{ post.url }}"><img class="img-thumbnail recent-post-img" alt="" src="{{ post.image }}"></a>
+					  <p><a href="{{post.url}}">{{post.title}}</a></p>
+					  <span class="color">
+						{{ post.date | date: "%B" }}
+						{{ post.date | date: "%-d" }},
+						{{ post.date | date: "%Y" }}
+					  </span>
+				   </li>
+				 {% endfor %}
+			</ul>
+
+		 </div>
+		 <!--
+		 <div class="tabscontent" id="content2">
+			<ul class="posts">
+			   <li>
+				  <a href="#"><img class="img-thumbnail recent-post-img" alt="" src="img/recent-post-img.jpg"></a>
+				  <p><a href="#">Lorem Ipsum is simply dummy text.</a></p>
+				  <span class="color">27 July 2013</span>
+			   </li>
+			   <li>
+				  <a href="#"><img class="img-thumbnail recent-post-img" alt="" src="img/recent-post-img.jpg"></a>
+				  <p><a href="#">Lorem Ipsum is simply dummy text.</a></p>
+				  <span class="color">30 July 2013</span>
+			   </li>
+			</ul>
+		 </div>
+		 <div class="tabscontent" id="content3">
+			<ul class="posts">
+			   <li>
+				  <a href="#"><img class="img-thumbnail recent-post-img" alt="" src="img/recent-post-img.jpg"></a>
+				  <p><a href="#">Lorem Ipsum is simply dummy text.</a></p>
+				  by <span class="color">wptuts+</span>
+			   </li>
+			   <li>
+				  <a href="#"><img class="img-thumbnail recent-post-img" alt="" src="img/recent-post-img.jpg"></a>
+				  <p><a href="#">Lorem Ipsum is simply dummy text.</a></p>
+				  by <span class="color">wptuts+</span>
+			   </li>
+			</ul>
+		 </div>
+		 -->
+	  </div>
+   </div>
+</div>
