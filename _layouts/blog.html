@@ -40,15 +40,8 @@
                   <div class="row">
                      <div class="posts-block col-lg-9 col-md-9 col-sm-8 col-xs-12 bottom-pad">
 							<article class="post hentry">
-                            <div class="post-image">
-                               <a href="{{ page.image }}" data-rel="prettyPhoto">
-                               <span class="img-hover"></span>
-                               <span class="fullscreen"><i class="icon-search"></i></span>
-                               <img src="{{ page.image }}" alt="">
-                               </a>
-                            </div>
-                            <header class="post-header">
-                               <h3 class="content-title">{{ page.title }}</h3>
+							<header class="post-header">
+                               <!-- <h3 class="content-title">{{ page.title }}</h3> -->
                                <div class="blog-entry-meta">
                                   <div class="blog-entry-meta-date">
                                      <i class="icon-time"></i>
@@ -60,8 +53,21 @@
                                      <i class="icon-user"></i>
                                      <span class="blog-entry-meta-author">{{ page.author }}</span>
                                   </div>
+								<div class="blog-entry-meta-tags">
+								   <i class="icon-tags"></i>
+									{% for tag in page.tags %}
+										<a href="/tag/{{ tag }}.html">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+									{% endfor %}
+								</div>
                                </div>
                             </header>
+                            <div class="img-content">
+                               <a href="{{ page.image }}" data-rel="prettyPhoto">
+                               <!-- <span class="img-hover"></span>
+                               <span class="fullscreen"><i class="icon-search"></i></span> -->
+                               <img src="{{ page.image }}" alt="">
+                               </a>
+                            </div>
 								<div class="post-content">
 		 {{ content }}
 								</div>
