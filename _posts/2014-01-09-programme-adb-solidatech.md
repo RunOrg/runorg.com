@@ -1,10 +1,10 @@
 ---
-title: RUNORG devient membre de CAP Digital
+title: RUNORG devient donateur AdB SolidaTech
 layout: blog
 author: RUNORG
-image: /img/blog/post-cap-digital.jpg
+image: /img/blog/post-adbsolidatech.jpg
 tags: ["annonce" , "entreprise"]
-resume: RUNORG devient membre entreprise du pôle de compétitivité CAP Digital.
+resume: Nous aidons les associations ! RUNORG devient donateur du programme AdB Solidatech au coté de grands comptes de l'industrie informatique.
 --- 
 Depuis le début de cette année 2014 RUNORG est devenu membre de [CAP Digital](http://www.capdigital.com/) .
 
@@ -16,3 +16,6 @@ Développant une solution open source, nous sommes naturellement ouverts à tout
 
 L'équipe RUNORG.
 
+https://www.adb-solidatech.fr/donors_fr/runorg-fr
+https://www.adb-solidatech.fr/
+https://www.adb-solidatech.fr/temoignage-runorg

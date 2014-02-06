@@ -380,7 +380,7 @@ layout: default
    <div class="container">
 	  <div class="row">
 		 <div class="col-lg-12 col-md-12 com-sm-12 col-xs-12">
-			<h3 class="title">Latest Posts</h3>
+			<h3 class="title">Derniers articles de blog</h3>
 		 </div>
 		 <div class="clearfix"></div>
 		 <div class="blog-showcase col-lg-12 col-md-12 col-sm-12 col-xs-12 animate_afb d1">
@@ -389,7 +389,7 @@ layout: default
 			   <li {% if forloop.first %}class="blog-first-el" {%endif %}>
 				  <div class="blog-showcase-thumb col-lg-4">
 					 <div class="post-body">
-						<a class="post-item-link" href="{{ post.image }}" data-rel="prettyPhoto"><span class="post-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img alt="" src="{{ post.image }}"></a>
+						<a class="post-item-link" href="{{ post.url }}"><span class="post-item-hover"></span> <span class="fullscreen"><i class="icon-mail-forward"></i></span><img alt="" src="{{ post.image }}"></a>
 					 </div>
 				  </div>
 				  <div class="blog-showcase-extra-info col-lg-4">
@@ -400,7 +400,7 @@ layout: default
 					 </a></span>
 					 <h4><a href="{{ post.url }}" class="title">{{post.title}}</a></h4>
 					 <p>{{post.resume}}</p>
-					 <a href="{{ post.url }}">Read more <i class="icon-double-angle-right"></i></a>
+					<!-- <a href="{{ post.url }}">En savoir plus <i class="icon-double-angle-right"></i></a> -->
 				  </div>
 			   </li>
 			{% endfor %}
