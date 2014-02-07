@@ -2,11 +2,11 @@
 title: RUNORG devient membre de CAP Digital
 layout: blog
 author: RUNORG
-image: /img/portfolio/capture-runorg-opensource.jpg
-tags: ["annonce" , "entreprise"]
+image: /img/blog/post-cap-digital.jpg
+tags: ["Nouveaute" , "Notre-Entreprise"]
 resume: RUNORG devient membre entreprise du pôle de compétitivité CAP Digital.
 --- 
-Depuis le début de cette année 2014 RUNORG est devenu membre de [CAP Digital](http://daringfireball.net/projects/markdown/) .
+Depuis le début de cette année 2014 RUNORG est devenu membre de [CAP Digital](http://www.capdigital.com/) .
 
 Nous sommes très heureux de rejoindre le pôle de compétitivité des services et contenus numériques ! 
 
