@@ -34,43 +34,44 @@ layout: default
                            Envoyez nous un message et laissez-nous votre numéro de téléphone : nous vous rappelons et répondons au plus vite.
                         </p>
                         <!-- <div class="divider"></div> -->
-                        <form action="http://runorg.com/post-contact" method="POST">
-						<input type="hidden" name="redirect" value="http://runorg.com/contact-tx.html"/>
+                        <form action="http://crm.runorg.com/crm/modules/Webforms/capture.php" method="POST" accept-charset="utf-8">
+						<input type="hidden" name="publicid" value="6ee496940f50e357238c8485e045d8ae"></input>
+						<input type="hidden" name="name" value="document upload test"></input>
 						    <fieldset>
                               <div class="row">
                                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <label>Nom et Prénom : <span>*</span></label>
-                                    <input class="form-control" id="name" name="name" type="text" value="" required>
+                                    <label>Prénom : <span>*</span></label>
+                                    <input class="form-control" id="firstname" name="firstname" type="text" value="" required>
                                  </div>
+								 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label>Nom : <span>*</span></label>
+                                    <input class="form-control" id="lastname" name="lastname" type="text" value="" required>
+                                 </div>
+                                </div>
+							  <div class="row">
+                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label>Téléphone : <span></span></label>
+                                    <input class="form-control" id="phone" name="phone" type="text" value="" required>
+                                 </div>
+                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label>Nom de votre organisation <span>*</span></label>
+                                    <input class="form-control" type="text" id="company" name="company" value="" required>
+                                 </div>
+                              </div>
+                              <div class="row">
                                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <label>Email : <span>*</span></label>
                                     <input class="form-control" type="email" id="email" name="email" value="" required>
                                  </div>
                               </div>
-							  <div class="row">
-                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <label>Téléphone : <span>*</span></label>
-                                    <input class="form-control" id="phone" name="phone" type="text" value="" required>
-                                 </div>
-                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <label>Nom de votre organisation <span>*</span></label>
-                                    <input class="form-control" type="text" id="orgname" name="orgname" value="" required>
-                                 </div>
-                              </div>
-                              <div class="row">
-                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <label>Sujet : <span>*</span></label>
-                                    <input class="form-control" id="subject" name="subject" type="text" value="" required>
-                                 </div>
-                              </div>
-                              <div class="row">
+                              <!--<div class="row">
                                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <label>Message: <span>*</span></label>
                                     <textarea class="form-control" id="text" name="text" rows="3" cols="40" required></textarea>
                                  </div>
-                              </div>
+                              </div> -->
                            </fieldset>
-                           <button class="btn-normal btn-color submit  bottom-pad" type="submit">Envoyer</button>
+                           <button class="btn-normal btn-color submit  bottom-pad" type="submit">M'envoyer le lien</button>
                            <div class="success alert-success alert" style="display:none">Votre message nous a été envoyé avec succès. Nous reviendrons vers vous au plus vite.</div>
                            <div class="error alert-error alert" style="display:none">E-mail must be valid and message must be longer than 100 characters.</div>
                            <div class="clearfix">
